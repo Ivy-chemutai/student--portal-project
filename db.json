@@ -1,0 +1,77 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Lurambi Mwendazake",
+      "studentId": "STD12345",
+      "program": "Computer Science",
+      "year": 3,
+      "gpa": 3.7
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "code": "CS101",
+      "title": "Introduction to Programming",
+      "instructor": "Dr. Abubakar Sheikh",
+      "credits": 3,
+      "schedule": "Mon, Wed 10:00-11:30",
+      "description": "Fundamentals of programming using Python."
+    },
+    {
+      "id": "2",
+      "code": "CS202",
+      "title": "Data Structures",
+      "instructor": "Dr. Brian Kemeu",
+      "credits": 4,
+      "schedule": "Tue, Thu 13:00-14:30",
+      "description": "Advanced data structures and algorithms."
+    },
+    {
+      "id": "3",
+      "code": "MATH201",
+      "title": "Calculus II",
+      "instructor": "Prof. Emmanuel Kerich",
+      "credits": 4,
+      "schedule": "Mon, Wed, Fri 9:00-10:00",
+      "description": "Integral calculus and applications."
+    }
+  ],
+  "assignments": [
+    {
+      "id": "1",
+      "courseId": 1,
+      "title": "Python Basics",
+      "description": "Create a simple calculator program using Python.",
+      "dueDate": "2023-11-15",
+      "maxScore": 100
+    },
+    {
+      "id": "2",
+      "courseId": 2,
+      "title": "Binary Search Tree Implementation",
+      "description": "Implement a binary search tree with insert, delete, and search operations.",
+      "dueDate": "2023-11-20",
+      "maxScore": 100
+    },
+    {
+      "id": "3",
+      "courseId": 3,
+      "title": "Integration Problems",
+      "description": "Solve the integration problems from Chapter 5.",
+      "dueDate": "2023-11-18",
+      "maxScore": 50
+    }
+  ],
+  "submissions": [
+    {
+      "id": "6303",
+      "assignmentId": "",
+      "studentId": 1,
+      "submissionText": "fvrsjfvsjfvsjfjjvdjfvkdkfvkdkvfkdkfkvkdfkv",
+      "submissionDate": "2025-07-23",
+      "status": "submitted"
+    }
+  ]
+}

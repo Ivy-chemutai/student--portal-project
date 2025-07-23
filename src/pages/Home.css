@@ -1,0 +1,15 @@
+.jumbotron-bg {
+  background-image: linear-gradient(rgba(126, 87, 194, 0.85), rgba(94, 53, 177, 0.95)), url('https://i.pinimg.com/736x/ad/3f/ff/ad3fff42223868d9896d546ea4ccbe01.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Fallback background color in case image doesn't load */
+  background-color: var(--primary-color);
+}
+
+.cta-section {
+  background-image: linear-gradient(rgba(126, 87, 194, 0.9), rgba(94, 53, 177, 0.9)), url('https://i.pinimg.com/736x/ad/3f/ff/ad3fff42223868d9896d546ea4ccbe01.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Fallback background color in case image doesn't load */
+  background-color: var(--primary-color);
+}

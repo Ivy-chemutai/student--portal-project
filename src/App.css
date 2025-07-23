@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #7e57c2; /* Main purple */
+  --primary-dark: #5e35b1; /* Darker purple */
+  --primary-light: #b39ddb; /* Lighter purple */
+  --secondary-color: #4fc3f7; /* Blue */
+  --accent-color: #66bb6a; /* Green */
+  --warning-color: #ffb74d; /* Orange */
+  --info-color: #4dd0e1; /* Teal */
+  --light-color: #f5f5f5;
+  --dark-color: #424242;
+  --text-color: #424242;
+  --text-light: #757575;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://i.pinimg.com/736x/ad/3f/ff/ad3fff42223868d9896d546ea4ccbe01.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.navbar {
+  box-shadow: var(--shadow);
+  background-color: var(--white) !important;
+  padding: 15px 0;
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .nav-link {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+
+.navbar-dark .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-dark .nav-link.active {
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+  transition: all 0.3s;
+  border: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.card-header {
+  background-color: var(--white);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+}
+
+.jumbotron {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.jumbotron::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(150px, -150px);
+  z-index: 0;
+}
+
+.jumbotron * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 10px rgba(126, 87, 194, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(126, 87, 194, 0.4);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+}
+
+.bg-success {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #43a047 100%) !important;
+}
+
+.bg-warning {
+  background: linear-gradient(135deg, var(--warning-color) 0%, #fb8c00 100%) !important;
+}
+
+.bg-info {
+  background: linear-gradient(135deg, var(--info-color) 0%, #00acc1 100%) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.badge {
+  padding: 0.5em 0.8em;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.badge.bg-primary {
+  background: var(--primary-color) !important;
+}
+
+.dashboard-card {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.dashboard-card .card-body {
+  padding: 1.5rem;
+}
+
+.dashboard-card .icon-bg {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  font-size: 5rem;
+  opacity: 0.15;
+}
+
+/* Custom animation for cards */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
